@@ -7,8 +7,8 @@ jobs:
     tests:
         runs-on: ubuntu-latest
         services:
-            postres:
-                image: postres:13.10
+            postgres:
+                image: postgres:13.10
                 env:
                     POSTGRES_USER: django_user
                     POSTGRES_PASSWORD: django_password
